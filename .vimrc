@@ -30,6 +30,8 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set nobackup
 set noswapfile
 
+set t_Co=256
+
 if &t_Co >= 256 || has("gui_running")
   colorscheme mustang
 endif
@@ -68,15 +70,15 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
-
+Plugin 'WolfgangMehner/vim-plugins'
 Plugin 'scrooloose/syntastic'
-
+Plugin 'scrooloose/nerdcommenter'
 " This does what it says on the tin. It will check your file on open too, not
 " just on save.
 " " You might not want this, so just leave it out if you don't.
 " let g:syntastic_check_on_open=1
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " These are the tweaks I apply to YCM's config, you don't need them but they
 " might help.
@@ -104,3 +106,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+autocmd VimEnter * NERDTree | wincmd p
+set showtabline=2
+
