@@ -79,6 +79,7 @@ Plugin 'scrooloose/nerdcommenter'
 " let g:syntastic_check_on_open=1
 
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
 
 " These are the tweaks I apply to YCM's config, you don't need them but they
 " might help.
@@ -89,9 +90,11 @@ Plugin 'scrooloose/nerdcommenter'
 " set completeopt-=preview
 
 Plugin 'marijnh/tern_for_vim'
-
+Plugin 'tmhedberg/SimpylFold'
 Plugin 'msanders/snipmate.vim'
-
+Plugin 'tpope/vim-fugitive'
+"Python Autocomplete
+Plugin 'davidhalter/jedi-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
