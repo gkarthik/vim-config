@@ -93,6 +93,7 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'msanders/snipmate.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 "Python Autocomplete
 Plugin 'davidhalter/jedi-vim'
 " All of your Plugins must be added before the following line
@@ -111,4 +112,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 autocmd VimEnter * NERDTree | wincmd p
 set showtabline=2
+
+"Close if NERDTREE last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
