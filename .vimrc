@@ -122,8 +122,12 @@ autocmd BufEnter * call CheckLeftBuffers()
 
 "set t_Co=256
 se t_Co=16
+"For gui. In terminal change terminal font
+set guifont=Inconsolata
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+
 
 
