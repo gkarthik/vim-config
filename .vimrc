@@ -92,7 +92,8 @@ set omnifunc=syntaxcomplete#Complete
 " set the binding for delimitate
 imap <C-c> <CR><Esc>O
 
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd vimenter * NERDTree | wincmd p
+let Tlist_Use_Right_Window   = 1
 set showtabline=2
 
 "Close if NERDTREE last buffer
@@ -124,3 +125,5 @@ se t_Co=16
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+
